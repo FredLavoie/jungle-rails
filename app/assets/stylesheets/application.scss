@@ -15,3 +15,23 @@ body {
 form.button_to {
   display: inline;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form.reg_form {
+  width: 60%;
+  margin: auto;
+}
+
+.button {
+  width: 40%;
+  margin: 1em auto;
+}
+
+.log {
+  display: flex !important;
+  align-items: center;
+}
