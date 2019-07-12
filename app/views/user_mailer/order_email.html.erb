@@ -1,0 +1,11 @@
+
+<h1>Thank you for placing your order, <%= @order.email %></h1>
+<p>Here is a summary of your order:</p>
+<ul>
+  <% @order.line_items.each do |item| %>
+    <li><%= item.product.name%></li>
+  <% end %>
+</ul>
+<p>You order total is: <%= @order.total %></p>
+
+

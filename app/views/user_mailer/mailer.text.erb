@@ -1,0 +1,15 @@
+Welcome to jungle.com, <%= @user.name %>
+===============================================
+ 
+You have successfully placed your order.
+
+Here is a summary of your order:
+<% @order.line_items.each do |item| %>
+  <%= item.product.name%>
+<% end %>
+
+You order total is: <%= order.total_cents %>
+
+ 
+
+ 
