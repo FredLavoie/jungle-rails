@@ -1,6 +1,6 @@
 class Admin::CategoriesController < ApplicationController
 
-  include HttpAuthConcern
+  http_basic_authenticate_with username: ENV['ADMIN_USER'], password: ENV['ADMIN_PASSWORD']
   
   before_filter :authorize
 

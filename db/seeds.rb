@@ -133,4 +133,53 @@ cat3.products.create!({
 })
 
 
+## USERS
+
+puts "Re-creating Users ..."
+
+User.destroy_all
+
+User.create!({
+  first_name: 'Little',
+  last_name: 'Chicken',
+  email: 'little@chicken.com',
+  password_digest: '123qwerty'
+})
+
+
+## REVIEWS
+
+puts "Re-creating Reviews ..."
+
+Review.destroy_all
+
+Review.create!({
+  rating: 3,
+  comment: 'Was good',
+  product_id: 1,
+  user_id: 1
+})
+
+Review.create!({
+  rating: 4,
+  comment: 'The best. Much wow.',
+  product_id: 2,
+  user_id: 1
+})
+
+Review.create!({
+  rating: 5,
+  comment: 'Such quality. Must enjoy.',
+  product_id: 1,
+  user_id: 1
+})
+
+Review.create!({
+  rating: 2,
+  comment: 'Very happy.',
+  product_id: 2,
+  user_id: 1
+})
+
+
 puts "DONE!"
