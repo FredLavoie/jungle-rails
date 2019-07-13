@@ -1,5 +1,7 @@
 class Admin::ProductsController < ApplicationController
 
+  include HttpAuthConcern
+
   before_filter :authorize
 
   def index
