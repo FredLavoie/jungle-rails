@@ -143,7 +143,7 @@ User.create!({
   first_name: 'Little',
   last_name: 'Chicken',
   email: 'little@chicken.com',
-  password_digest: '123qwerty'
+  password: '123qwerty'
 })
 
 
